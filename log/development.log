@@ -1,0 +1,95 @@
+  [4;36;1mSQL (40.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (260.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (361.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (160.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (301.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (130.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (161.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (90.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (130.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (90.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `tournament_game_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSHOW FIELDS FROM `tournament_games`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `tournament_games`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSHOW KEYS FROM `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournaments`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `tournaments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW KEYS FROM `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_games`[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mdescribe `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_profiles`[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mSHOW KEYS FROM `user_profiles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `user_roles`[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mdescribe `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_roles`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `venues`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `venues`[0m
