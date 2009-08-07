@@ -39,3 +39,7 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+$ACCESS_LEVEL_MEMBER = 1
+$ACCESS_LEVEL_ORGANIZER= 2
+$ACCESS_LEVEL_ADMIN = 3

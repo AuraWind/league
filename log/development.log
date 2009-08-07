@@ -93,3 +93,1596 @@ Migrating to CreateUserProfiles (20090806053036)
   [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `venues`[0m
   [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `venues`[0m
   [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:14:57) [GET]
+  [4;36;1mTournament Load (241.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (30.0ms)[0m   [0mSELECT * FROM `events` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/default.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:15:54) [GET]
+  [4;36;1mTournament Load (20.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/default.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:15:56) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/default.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:18:37) [GET]
+  [4;36;1mTournament Load (10.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (Missing template shared/_header.erb in view path app/views) on line #1 of app/views/layouts/default.html.erb:
+1: <%= render :partial => 'shared/header' %>
+2: <body>
+3: 	<%= yield %>
+4: </body>
+
+    app/views/layouts/default.html.erb:1
+
+Rendered rescues/_trace (3555.0ms)
+Rendered rescues/_request_and_response (30.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:19:19) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (Missing template shared/_header.erb in view path app/views) on line #1 of app/views/layouts/default.html.erb:
+1: <%= render :partial => 'shared/header' %>
+2: <body>
+3: 	<%= yield %>
+4: </body>
+
+    app/views/layouts/default.html.erb:1
+
+Rendered rescues/_trace (1102.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:19:50) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (10.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (30.0ms)
+Rendered layouts/shared/_footer (10.0ms)
+Completed in 3124ms (View: 2934, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:21:18) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (20.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (11.0ms)
+Completed in 2274ms (View: 1112, DB: 40) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:24:08) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (10.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+ERROR: compiling _run_erb_app47views47main47index46html46erb RAISED compile error
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected '<'
+<% else - ; @output_buffer.concat "\n"
+ ^
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected ';'
+<% else - ; @output_buffer.concat "\n"
+           ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected '<'
+<% else - ; @output_buffer.concat "\n"
+ ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected ';'
+<% else - ; @output_buffer.concat "\n"
+           ^
+Function body:           def _run_erb_app47views47main47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Welcome to the League</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h2>Tournaments</h2>\n"
+@output_buffer.concat "\n"
+ if @tournaments.present? 
+@output_buffer.concat "\t";  @tournaments.each do |tournament| 
+@output_buffer.concat "\t\t<p>"; @output_buffer.concat(( tournament.name ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "\t";  end -
+<% else - ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<p><em>No upcoming tournaments.</em></p>\n"
+ end 
+@output_buffer.concat "\n"
+@output_buffer.concat "<h2>Events</h2>\n"
+@output_buffer.concat "\n"
+ if @events.present? 
+@output_buffer.concat "\t";  @events.each do |event| 
+@output_buffer.concat "\t\t<p>"; @output_buffer.concat(( event.name ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "\t";  end -
+<% else - ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<p><em>No upcoming events.</em></p>\n"
+ end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/workspace/league/app/views/main/index.html.erb:25:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected '<'
+<% else - ; @output_buffer.concat "\n"
+ ^
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected ';'
+<% else - ; @output_buffer.concat "\n"
+           ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected '<'
+<% else - ; @output_buffer.concat "\n"
+ ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected ';'
+<% else - ; @output_buffer.concat "\n"
+           ^) on line #9 of app/views/main/index.html.erb:
+6: 	<% @tournaments.each do |tournament| -%>
+7: 		<p><%= tournament.name %></p>
+8: 	<% end -
+9: <% else - %>
+10: 	<p><em>No upcoming tournaments.</em></p>
+11: <% end -%>
+12: 
+
+    app/views/main/index.html.erb:25:in `compile!'
+
+Rendered rescues/_trace (841.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:24:41) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+ERROR: compiling _run_erb_app47views47main47index46html46erb RAISED compile error
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected ';'
+ else - ; @output_buffer.concat "\n"
+         ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected ';'
+ else - ; @output_buffer.concat "\n"
+         ^
+Function body:           def _run_erb_app47views47main47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Welcome to the League</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h2>Tournaments</h2>\n"
+@output_buffer.concat "\n"
+ if @tournaments.present? 
+@output_buffer.concat "\t";  @tournaments.each do |tournament| 
+@output_buffer.concat "\t\t<p>"; @output_buffer.concat(( tournament.name ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "\t";  end 
+ else - ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<p><em>No upcoming tournaments.</em></p>\n"
+ end 
+@output_buffer.concat "\n"
+@output_buffer.concat "<h2>Events</h2>\n"
+@output_buffer.concat "\n"
+ if @events.present? 
+@output_buffer.concat "\t";  @events.each do |event| 
+@output_buffer.concat "\t\t<p>"; @output_buffer.concat(( event.name ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "\t";  end 
+ else - ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<p><em>No upcoming events.</em></p>\n"
+ end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/workspace/league/app/views/main/index.html.erb:25:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/workspace/league/app/views/main/index.html.erb:9: syntax error, unexpected ';'
+ else - ; @output_buffer.concat "\n"
+         ^
+C:/workspace/league/app/views/main/index.html.erb:19: syntax error, unexpected ';'
+ else - ; @output_buffer.concat "\n"
+         ^) on line #9 of app/views/main/index.html.erb:
+6: 	<% @tournaments.each do |tournament| -%>
+7: 		<p><%= tournament.name %></p>
+8: 	<% end -%>
+9: <% else - %>
+10: 	<p><em>No upcoming tournaments.</em></p>
+11: <% end -%>
+12: 
+
+    app/views/main/index.html.erb:25:in `compile!'
+
+Rendered rescues/_trace (3325.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:25:05) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (20.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (10.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 280ms (View: 100, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:26:51) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (20.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 311ms (View: 130, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:27:01) [GET]
+  [4;36;1mTournament Load (11.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 331ms (View: 140, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:27:14) [GET]
+  [4;36;1mTournament Load (10.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (undefined method `sessions_new_path_path' for #<ActionView::Base:0x4703c04>) on line #24 of app/views/main/index.html.erb:
+21: <% end -%>
+22: 
+23: 
+24: <%= link_to 'Login', :sessions_new_path %>
+
+    app/views/main/index.html.erb:24
+
+Rendered rescues/_trace (1011.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:27:35) [GET]
+  [4;36;1mTournament Load (10.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (undefined method `sessions_new_path' for #<ActionView::Base:0x47785f4>) on line #24 of app/views/main/index.html.erb:
+21: <% end -%>
+22: 
+23: 
+24: <%= link_to 'Login', :sessions_new %>
+
+    app/views/main/index.html.erb:24
+
+Rendered rescues/_trace (2264.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:28:57) [GET]
+  [4;36;1mTournament Load (20.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (10.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (undefined method `session_path_path' for #<ActionView::Base:0x47d2144>) on line #24 of app/views/main/index.html.erb:
+21: <% end -%>
+22: 
+23: 
+24: <%= link_to 'Login', :session_path %>
+
+    app/views/main/index.html.erb:24
+
+Rendered rescues/_trace (8192.0ms)
+Rendered rescues/_request_and_response (20.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:30:24) [GET]
+  [4;36;1mTournament Load (20.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (20.0ms)
+Completed in 411ms (View: 200, DB: 30) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2009-08-06 22:30:29) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:30:38) [GET]
+  [4;36;1mTournament Load (20.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+
+ActionView::TemplateError (undefined local variable or method `session_new_path' for #<ActionView::Base:0x47b64a8>) on line #24 of app/views/main/index.html.erb:
+21: <% end -%>
+22: 
+23: 
+24: <%= link_to 'Login', session_new_path %>
+
+    app/views/main/index.html.erb:24
+
+Rendered rescues/_trace (3145.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:31:00) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (10.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 491ms (View: 171, DB: 30) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-08-06 22:31:04) [GET]
+Rendering sessions/new
+Completed in 50ms (View: 40, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 22:31:34) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 390ms (View: 170, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-06 22:31:38) [GET]
+  [4;36;1mUser Columns (250.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Completed in 981ms (View: 270, DB: 250) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (20.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-06 22:33:19) [GET]
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Completed in 621ms (View: 260, DB: 51) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mDROP TABLE `user_profiles`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806053036'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_game_signups`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mSHOW FIELDS FROM `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `tournaments`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mSHOW FIELDS FROM `user_games`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_games`[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (220.0ms)[0m   [0;1mDROP TABLE `comments`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052623'[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `venues`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052603'[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournament_game_signups`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052545'[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `tournament_games`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052527'[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournaments`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052509'[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (60.0ms)[0m   [0;1mDROP TABLE `event_signups`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052446'[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `events`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052427'[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_games`[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052356'[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `platforms`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052317'[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `games`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052040'[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_roles`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051517'[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051154'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (301.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `access_level` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_game_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `tournaments`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_roles`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `venues`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (70.0ms)[0m   [0;1mDROP TABLE `user_profiles`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806053036'[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `comments`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052623'[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `venues`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052603'[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (51.0ms)[0m   [0;1mDROP TABLE `tournament_game_signups`[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052545'[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `tournament_games`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052527'[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `tournaments`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052509'[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `event_signups`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052446'[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `events`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052427'[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (51.0ms)[0m   [0;1mDROP TABLE `user_games`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052356'[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (60.0ms)[0m   [0;1mDROP TABLE `platforms`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052317'[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `games`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052040'[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_roles`[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051517'[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051154'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (280.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (160.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (150.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (111.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `access_level` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090807051259')[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_game_signups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_games`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRole Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (10.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Member', '2009-08-07 05:33:18', 1, '2009-08-07 05:33:18')[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (11.0ms)[0m   [0mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Organizer', '2009-08-07 05:33:19', 2, '2009-08-07 05:33:19')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Administrator', '2009-08-07 05:33:19', 3, '2009-08-07 05:33:19')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: first_name, last_name
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (130.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'aurawind@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mUserRole Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `user_roles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserRole Create (10.0ms)[0m   [0mINSERT INTO `user_roles` (`updated_at`, `role_id`, `user_id`, `created_at`) VALUES('2009-08-07 05:33:19', 3, NULL, '2009-08-07 05:33:19')[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mGame Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `games`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (11.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('BlazBlue', '2009-08-07 05:33:19', 'BB', 'Aksys Games', 'ARC System Works', '2009-08-07 05:33:19')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('The King of Fighters XII', '2009-08-07 05:33:19', 'KOF12', 'Ignition Entertainment', 'SNK Playmore', '2009-08-07 05:33:19')[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (10.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Marvel vs Capcom 2', '2009-08-07 05:33:19', 'MvC2', 'Capcom', 'Capcom', '2009-08-07 05:33:19')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Soul Calibur 4', '2009-08-07 05:33:20', 'SC4', 'Namco Bandai', 'Project Soul', '2009-08-07 05:33:20')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (10.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Super Street Fighter II HD ReMix', '2009-08-07 05:33:20', 'HDR', 'Capcom', 'Backbone Entertainment', '2009-08-07 05:33:20')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Street Fighter IV', '2009-08-07 05:33:20', 'SF4', 'Capcom', 'Capcom', '2009-08-07 05:33:20')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (0.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Tekken 6', '2009-08-07 05:33:20', 'T6', 'Namco Bandai', 'Namco', '2009-08-07 05:33:20')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPlatform Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlatform Create (0.0ms)[0m   [0mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Playstation 2', '2009-08-07 05:33:20', 'PS2', '2009-08-07 05:33:20')[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlatform Create (0.0ms)[0m   [0;1mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Playstation 3', '2009-08-07 05:33:20', 'PS3', '2009-08-07 05:33:20')[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlatform Create (0.0ms)[0m   [0mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Xbox 360', '2009-08-07 05:33:20', '360', '2009-08-07 05:33:20')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlatform Create (10.0ms)[0m   [0;1mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Wii', '2009-08-07 05:33:20', 'Wii', '2009-08-07 05:33:20')[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `roles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090807051259'[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (60.0ms)[0m   [0;1mDROP TABLE `user_profiles`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806053036'[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `comments`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052623'[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `venues`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052603'[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournament_game_signups`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052545'[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (51.0ms)[0m   [0;1mDROP TABLE `tournament_games`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052527'[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournaments`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052509'[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `event_signups`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052446'[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `events`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052427'[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_games`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052356'[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `platforms`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052317'[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `games`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052040'[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_roles`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051517'[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051154'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (431.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (240.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (111.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `access_level` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090807051259')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_game_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRole Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (10.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Member', '2009-08-07 05:36:10', 1, '2009-08-07 05:36:10')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Organizer', '2009-08-07 05:36:10', 2, '2009-08-07 05:36:10')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (10.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Administrator', '2009-08-07 05:36:10', 3, '2009-08-07 05:36:10')[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: first_name, last_name
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'aurawind@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `roles`[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090807051259'[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `user_profiles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806053036'[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `comments`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052623'[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `venues`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052603'[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournament_game_signups`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052545'[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `tournament_games`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052527'[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournaments`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052509'[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `event_signups`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052446'[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `events`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052427'[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `user_games`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052356'[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (51.0ms)[0m   [0;1mDROP TABLE `platforms`[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052317'[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `games`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052040'[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `user_roles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051517'[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051154'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (231.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (71.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `access_level` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090807051259')[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_game_signups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `tournaments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournaments`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'aurawind@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (10.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `remember_token_expires_at`, `remember_token`, `first_name`, `login`, `last_name`, `email`, `created_at`, `active`) VALUES('eb6d7340107837db827515c6eb0df6f096540c52', '2009-08-07 05:41:29', 'ce6115ab3bd72cb9c098fe6dfc144eddca3ee1d6', NULL, NULL, 'John', 'admin', 'Doe', 'aurawind@gmail.com', '2009-08-07 05:41:29', 1)[0m
+  [4;35;1mSQL (351.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRole Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Member', '2009-08-07 05:42:40', 1, '2009-08-07 05:42:40')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Organizer', '2009-08-07 05:42:40', 2, '2009-08-07 05:42:40')[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Administrator', '2009-08-07 05:42:40', 3, '2009-08-07 05:42:40')[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: first_name, last_name
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'aurawind@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (361.0ms)[0m   [0;1mDROP TABLE `roles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090807051259'[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `user_profiles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806053036'[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (30.0ms)[0m   [0;1mDROP TABLE `comments`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052623'[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (30.0ms)[0m   [0;1mDROP TABLE `venues`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052603'[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `tournament_game_signups`[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052545'[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournament_games`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052527'[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `tournaments`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052509'[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `event_signups`[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052446'[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `events`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052427'[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `user_games`[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052356'[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `platforms`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052317'[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (50.0ms)[0m   [0;1mDROP TABLE `games`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806052040'[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `user_roles`[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051517'[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090806051154'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090806051154)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (320.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `first_name` varchar(50), `last_name` varchar(50), `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `active` tinyint(1) DEFAULT 1) ENGINE=InnoDB[0m
+  [4;36;1mSQL (261.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051154')[0m
+Migrating to CreateUserRoles (20090806051517)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `user_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806051517')[0m
+Migrating to CreateGames (20090806052040)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `developer` varchar(255), `publisher` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052040')[0m
+Migrating to CreatePlatforms (20090806052317)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `platforms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052317')[0m
+Migrating to CreateUserGames (20090806052356)
+  [4;36;1mSQL (130.0ms)[0m   [0;1mCREATE TABLE `user_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `game_id` int(11), `platform_id` int(11), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052356')[0m
+Migrating to CreateEvents (20090806052427)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052427')[0m
+Migrating to CreateEventSignups (20090806052446)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `event_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `event_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052446')[0m
+Migrating to CreateTournaments (20090806052509)
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` date, `fee` float, `venue_id` int(11), `official` tinyint(1) DEFAULT 0, `info` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052509')[0m
+Migrating to CreateTournamentGames (20090806052527)
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `tournament_games` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tournament_id` int(11), `game_id` int(11), `platform_id` int(11), `fee` float, `start_at` time, `end_at` time, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052527')[0m
+Migrating to CreateTournamentGameSignups (20090806052545)
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE `tournament_game_signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `tournament_game_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052545')[0m
+Migrating to CreateVenues (20090806052603)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `venues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address1` varchar(255), `address2` varchar(255), `city` varchar(255), `state` varchar(2), `postal_code` varchar(255), `phone` varchar(255), `info` varchar(255), `private` tinyint(1) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052603')[0m
+Migrating to CreateComments (20090806052623)
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `commentable_id` int(11), `commentable_type` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806052623')[0m
+Migrating to CreateUserProfiles (20090806053036)
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE `user_profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090806053036')[0m
+Migrating to CreateRoles (20090807051259)
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `access_level` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090807051259')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `event_signups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_signups`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `games`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `platforms`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `platforms`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournament_game_signups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tournament_game_signups`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `tournament_games`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tournament_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `tournaments`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `tournaments`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_games`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `user_profiles`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `user_profiles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `user_profiles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRole Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (10.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Member', '2009-08-07 05:45:06', 1, '2009-08-07 05:45:06')[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Organizer', '2009-08-07 05:45:07', 2, '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO `roles` (`name`, `updated_at`, `access_level`, `created_at`) VALUES('Administrator', '2009-08-07 05:45:07', 3, '2009-08-07 05:45:07')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'aurawind@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `remember_token_expires_at`, `remember_token`, `first_name`, `login`, `last_name`, `email`, `created_at`, `active`) VALUES('3cb0b1a3dae61de24417357ce2a483c841c309b5', '2009-08-07 05:45:07', '0635eb41926f7ee388256d8bf044a1061a57e687', NULL, NULL, 'John', 'admin', 'Doe', 'aurawind@gmail.com', '2009-08-07 05:45:07', 1)[0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUserRole Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `user_roles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserRole Create (0.0ms)[0m   [0mINSERT INTO `user_roles` (`updated_at`, `role_id`, `user_id`, `created_at`) VALUES('2009-08-07 05:45:07', 3, 1, '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mGame Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `games`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (0.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('BlazBlue', '2009-08-07 05:45:07', 'BB', 'Aksys Games', 'ARC System Works', '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('The King of Fighters XII', '2009-08-07 05:45:07', 'KOF12', 'Ignition Entertainment', 'SNK Playmore', '2009-08-07 05:45:07')[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (0.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Marvel vs Capcom 2', '2009-08-07 05:45:07', 'MvC2', 'Capcom', 'Capcom', '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Soul Calibur 4', '2009-08-07 05:45:07', 'SC4', 'Namco Bandai', 'Project Soul', '2009-08-07 05:45:07')[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (0.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Super Street Fighter II HD ReMix', '2009-08-07 05:45:07', 'HDR', 'Capcom', 'Backbone Entertainment', '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGame Create (0.0ms)[0m   [0;1mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Street Fighter IV', '2009-08-07 05:45:07', 'SF4', 'Capcom', 'Capcom', '2009-08-07 05:45:07')[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGame Create (10.0ms)[0m   [0mINSERT INTO `games` (`name`, `updated_at`, `abbreviation`, `publisher`, `developer`, `created_at`) VALUES('Tekken 6', '2009-08-07 05:45:07', 'T6', 'Namco Bandai', 'Namco', '2009-08-07 05:45:07')[0m
+  [4;36;1mSQL (290.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPlatform Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `platforms`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlatform Create (0.0ms)[0m   [0mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Playstation 2', '2009-08-07 05:45:08', 'PS2', '2009-08-07 05:45:08')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlatform Create (0.0ms)[0m   [0;1mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Playstation 3', '2009-08-07 05:45:08', 'PS3', '2009-08-07 05:45:08')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlatform Create (0.0ms)[0m   [0mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Xbox 360', '2009-08-07 05:45:08', '360', '2009-08-07 05:45:08')[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlatform Create (0.0ms)[0m   [0;1mINSERT INTO `platforms` (`name`, `updated_at`, `abbreviation`, `created_at`) VALUES('Wii', '2009-08-07 05:45:08', 'Wii', '2009-08-07 05:45:08')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 23:50:23) [GET]
+  [4;36;1mTournament Load (10.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (30.0ms)
+
+ActionView::TemplateError (undefined local variable or method `current_user' for #<ActionView::Base:0x46b61d4>) on line #1 of app/views/layouts/shared/_session.html.erb:
+1: <% if current_user.blank? -%>
+2: 	<%= link_to 'Login', new_session_path %>
+3: 	<%= link_to 'Register', new_user_path %>
+4: <% else -%>
+
+    app/views/layouts/shared/_session.html.erb:1
+    app/views/layouts/default.html.erb:3
+
+Rendered rescues/_trace (1241.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 23:51:11) [GET]
+  [4;36;1mTournament Load (10.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (20.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+
+ActionView::TemplateError (undefined local variable or method `current_user' for #<ActionView::Base:0x4713b90>) on line #1 of app/views/layouts/shared/_session.html.erb:
+1: <% if current_user.nil? -%>
+2: 	<%= link_to 'Login', new_session_path %>
+3: 	<%= link_to 'Register', new_user_path %>
+4: <% else -%>
+
+    app/views/layouts/shared/_session.html.erb:1
+    app/views/layouts/default.html.erb:3
+
+Rendered rescues/_trace (1292.0ms)
+Rendered rescues/_request_and_response (30.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 23:51:57) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (21.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_session (30.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 371ms (View: 150, DB: 31) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-08-06 23:52:03) [GET]
+Rendering sessions/new
+Completed in 370ms (View: 230, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-08-06 23:52:12) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"kKnJ6iFf3XwwLN3oBOsHRIK7AXI8QpAJ84jAFMd0ZdI=", "login"=>"admin", "password"=>"cats123"}
+  [4;36;1mUser Columns (30.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (20.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 4546ms (DB: 50) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 23:52:18) [GET]
+  [4;36;1mTournament Load (20.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+Rendered layouts/shared/_session (0.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 381ms (View: 90, DB: 50) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-08-06 23:55:15) [GET]
+  [4;36;1mTournament Load (0.0ms)[0m   [0;1mSELECT * FROM `tournaments` [0m
+  [4;35;1mEvent Load (0.0ms)[0m   [0mSELECT * FROM `events` [0m
+Rendering template within layouts/default
+Rendering main/index
+Rendered layouts/shared/_header (0.0ms)
+  [4;36;1mUser Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered layouts/shared/_session (570.0ms)
+Rendered layouts/shared/_footer (0.0ms)
+Completed in 861ms (View: 631, DB: 20) | 200 OK [http://localhost/]

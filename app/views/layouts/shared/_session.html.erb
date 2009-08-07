@@ -1,0 +1,6 @@
+<% if !defined?(current_user) || current_user.blank? -%>
+	<%= link_to 'Login', new_session_path %>
+	<%= link_to 'Register', new_user_path %>
+<% else -%>
+	Welcome <%= current_user.name %>!
+<% end -%>
