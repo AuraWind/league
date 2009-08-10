@@ -43,3 +43,9 @@ end
 $ACCESS_LEVEL_MEMBER = 1
 $ACCESS_LEVEL_ORGANIZER= 2
 $ACCESS_LEVEL_ADMIN = 3
+
+ActiveSupport::CoreExtensions::Date::Conversions::DATE_FORMATS.merge!(
+  :default => '%m/%d/%Y',
+  :date_time12  => "%m/%d/%Y %I:%M%p",
+  :date_time24  => "%m/%d/%Y %H:%M"
+)

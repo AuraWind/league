@@ -3,8 +3,8 @@ class MainController < ApplicationController
 	layout 'default'
 
 	def index
-		@tournaments = Tournament.find(:all)
-		@events = Event.find(:all)
+		@tournaments = Event.upcoming_tournaments
+		@gatherings = Event.upcoming_gatherings
 	end
 
 end

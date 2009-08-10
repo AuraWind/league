@@ -3,4 +3,11 @@
 	<%= link_to 'Register', new_user_path %>
 <% else -%>
 	Welcome <%= current_user.name %>!
+	
+	<%= link_to 'Home', :controller => :main %>
+	<%= link_to 'My Events', :controller => :events %>
+	<%= link_to 'My Games', :controller => :games %>
+	<%= link_to 'My Account', :controller => :account %>
+	<%= link_to 'Calendar', :controller => :calendar %>
+	<%= link_to "Log out", logout_path, { :title => "Log out" }    %>
 <% end -%>

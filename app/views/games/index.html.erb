@@ -1,0 +1,28 @@
+<h1>My Games</h1>
+
+<p>
+	<%= link_to 'Add new game', :controller => :games, :action => :new %>
+</p>
+
+<% if @user_games.present? -%>
+	<table>
+		<tr>
+			<th>Game</th>
+			<th>Platform</th>
+			<th>My Rating</th>
+			<th>Options</th>
+		</tr>
+	<% @user_games.each do |user_game| -%>
+		<tr>
+			<td><%=h user_game.game.name %></td>
+			<td><%=h user_game.platform.name %></td>
+			<td><%= user_game.rating %></td>
+			<td>
+				<%= link_to 'edit', :controller => :games, :action => :edit, :id => user_game.id %>
+				<%= link_to 'remove', {:controller => :games, :action => :destroy, :id => user_game.id}, :confirm => "Are you sure you want to remove #{user_game.game.name} from your collection?" %>
+			</td>
+		</tr>
+	<% end -%>
+<% else -%>
+	<em>You currently don't have any games registered.</em>
+<% end -%>

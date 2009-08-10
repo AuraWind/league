@@ -5,6 +5,7 @@ namespace :setup do
 		puts 'Starting setup...'
 		create_roles
 		create_admin
+		create_event_types
 		create_games
 		create_platforms
 		puts 'Setup complete!'
@@ -30,6 +31,12 @@ namespace :setup do
 		user.reload
 			
 		UserRole.create({:user_id =>user.id, :role_id => $ACCESS_LEVEL_ADMIN})
+	end
+  
+	def create_event_types
+		puts 'Creating event types...'
+		EventType.create({:name => 'Gathering', :is_competitive => false})
+		EventType.create({:name=> 'Tournament', :is_competitive => true})
 	end
   
 	def create_games
@@ -79,6 +86,7 @@ namespace :setup do
 	
 	def create_platforms
 		puts 'Creating platforms'
+		Platform.create({:name => 'All Platforms', :abbreviation => 'All'})
 		Platform.create({:name => 'Playstation 2', :abbreviation => 'PS2'})
 		Platform.create({:name => 'Playstation 3', :abbreviation => 'PS3'})
 		Platform.create({:name => 'Xbox 360', :abbreviation => '360'})

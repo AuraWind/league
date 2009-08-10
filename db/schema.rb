@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090807051259) do
+ActiveRecord::Schema.define(:version => 20090808154801) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -20,20 +20,34 @@ ActiveRecord::Schema.define(:version => 20090807051259) do
     t.datetime "updated_at"
   end
 
-  create_table "event_signups", :force => true do |t|
-    t.integer  "user_id"
+  create_table "event_games", :force => true do |t|
+    t.string   "name"
     t.integer  "event_id"
+    t.integer  "game_id"
+    t.integer  "platform_id"
+    t.text     "info"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "event_types", :force => true do |t|
+    t.string   "name"
+    t.boolean  "is_competitive"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "events", :force => true do |t|
     t.string   "name"
-    t.date     "date"
-    t.float    "fee"
+    t.integer  "event_type_id"
     t.integer  "venue_id"
-    t.boolean  "official",   :default => false
+    t.float    "fee"
     t.text     "info"
+    t.boolean  "is_official",   :default => false
+    t.datetime "start_at"
+    t.datetime "end_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -61,31 +75,10 @@ ActiveRecord::Schema.define(:version => 20090807051259) do
     t.datetime "updated_at"
   end
 
-  create_table "tournament_game_signups", :force => true do |t|
+  create_table "signups", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "tournament_game_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "tournament_games", :force => true do |t|
-    t.integer  "tournament_id"
-    t.integer  "game_id"
-    t.integer  "platform_id"
-    t.float    "fee"
-    t.time     "start_at"
-    t.time     "end_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "tournaments", :force => true do |t|
-    t.string   "name"
-    t.date     "date"
-    t.float    "fee"
-    t.integer  "venue_id"
-    t.boolean  "official",   :default => false
-    t.text     "info"
+    t.integer  "assembly_id"
+    t.string   "assembly_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -100,6 +93,11 @@ ActiveRecord::Schema.define(:version => 20090807051259) do
   end
 
   create_table "user_profiles", :force => true do |t|
+    t.integer  "user_id"
+    t.date     "birth_date"
+    t.string   "username_xbox360"
+    t.string   "username_ps3"
+    t.string   "homepage_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

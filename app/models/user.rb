@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   include Authentication
   include Authentication::ByPassword
   include Authentication::ByCookieToken
+  
+  has_many :signups
+  has_many :user_games
+  has_many :games, :through => :user_games, :order => 'name ASC'
 
   validates_presence_of     :login
   validates_length_of       :login,    :within => 3..40
@@ -52,6 +56,14 @@ class User < ActiveRecord::Base
   
   def name
 	self.first_name + ' ' + self.last_name
+  end
+  
+  def upcoming_events
+	upcoming_event_ids = Event.upcoming_all.collect {|e| e.id}
+	signups = Signup.find(:all, 
+		:joins => 'INNER JOIN events ON events.id = signups.assembly_id', 
+		:conditions => ['user_id = ? AND assembly_type = ? AND assembly_id IN (?)', self.id, 'Event',  upcoming_event_ids], 
+		:order => 'events.start_at ASC')
   end
 
   protected
