@@ -4,7 +4,7 @@ class EventsController < ApplicationController
 	before_filter :login_required
 	
 	def index
-		@user_events = current_user.upcoming_events
+		@user_signups = current_user.upcoming_signups
 	end
 	
 end

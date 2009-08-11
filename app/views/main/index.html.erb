@@ -10,11 +10,11 @@
 	<p><em>No upcoming tournaments.</em></p>
 <% end -%>
 
-<h2>Events</h2>
+<h2>Gatherings</h2>
 
-<% if @events.present? -%>
-	<% @events.each do |event| -%>
-		<p><%= event.name %></p>
+<% if @gatherings.present? -%>
+	<% @gatherings.each do |gathering| -%>
+		<p><%= gathering.name %></p>
 	<% end -%>
 <% else -%>
 	<p><em>No upcoming events.</em></p>

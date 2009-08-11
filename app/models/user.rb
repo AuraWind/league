@@ -8,7 +8,8 @@ class User < ActiveRecord::Base
   has_many :signups
   has_many :user_games
   has_many :games, :through => :user_games, :order => 'name ASC'
-
+  has_one :user_profile
+  
   validates_presence_of     :login
   validates_length_of       :login,    :within => 3..40
   validates_uniqueness_of   :login
@@ -58,12 +59,10 @@ class User < ActiveRecord::Base
 	self.first_name + ' ' + self.last_name
   end
   
-  def upcoming_events
-	upcoming_event_ids = Event.upcoming_all.collect {|e| e.id}
-	signups = Signup.find(:all, 
-		:joins => 'INNER JOIN events ON events.id = signups.assembly_id', 
-		:conditions => ['user_id = ? AND assembly_type = ? AND assembly_id IN (?)', self.id, 'Event',  upcoming_event_ids], 
-		:order => 'events.start_at ASC')
+  def upcoming_signups
+	signups = self.signups.find(:all,
+		:include => :assembly)
+	signups.sort!{|a,b| a.event.start_at <=> b.event.start_at}
   end
 
   protected

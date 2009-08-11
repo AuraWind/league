@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090808154801) do
+ActiveRecord::Schema.define(:version => 20090811055453) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -100,6 +100,8 @@ ActiveRecord::Schema.define(:version => 20090808154801) do
     t.string   "homepage_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "state"
   end
 
   create_table "user_roles", :force => true do |t|

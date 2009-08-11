@@ -1,17 +1,17 @@
 <h1>My Events</h1>
 
-<% if @user_events.present? -%>
+<% if @user_signups.present? -%>
 	<table>
 		<tr>
 			<th>Event Name</th>
 			<th>Event Type</th>
 			<th>Event Date</th>
 		</tr>	
-		<% @user_events.each do |event| -%>
+		<% @user_signups.each do |signup| -%>
 			<tr>
-				<td><%=h event.assembly.name %></td>
-				<td><%=h event.assembly.event_type.name %></td>
-				<td><%=h event_date(assembly) %></td>
+				<td><%=h signup.assembly.name %></td>
+				<td><%=h signup.assembly.event_type.name %></td>
+				<td><%= event_date(signup.assembly) %></td>
 			</tr>
 		<% end -%>
 <% else -%>
