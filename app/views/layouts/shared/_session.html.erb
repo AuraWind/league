@@ -2,12 +2,13 @@
 	<%= link_to 'Login', new_session_path %>
 	<%= link_to 'Register', new_user_path %>
 <% else -%>
-	Welcome <%= current_user.name %>!
-	
-	<%= link_to 'Home', :controller => :main %>
-	<%= link_to 'My Events', :controller => :events %>
-	<%= link_to 'My Games', :controller => :games %>
-	<%= link_to 'My Account', :controller => :user_profiles %>
-	<%= link_to 'Calendar', :controller => :calendar %>
-	<%= link_to "Log out", logout_path, { :title => "Log out" }    %>
+	<p>
+		Welcome <%= current_user.name %>!
+		
+		<%= link_to 'Home', :controller => :main %>
+		<%= link_to 'My Events', :controller => '/member/events' %>
+		<%= link_to 'My Account', :controller => '/member/accounts' %>
+		<%= link_to 'Calendar', :controller => :calendar %>
+		<%= link_to "Log out", logout_path, { :title => "Log out" }   %>
+	</p>
 <% end -%>

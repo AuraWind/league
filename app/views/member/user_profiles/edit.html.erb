@@ -1,0 +1,45 @@
+<h1>Edit My Profile</h1>
+
+<% form_for :user_profile, :url => {:controller => '/member/user_profiles', :action => :update} do |f| -%>
+	<table>
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<legend>Location</legend>
+					<table>
+						<tr>
+							<td>City</td>
+							<td><%= f.text_field :city %></td>
+						</tr>
+						<tr>
+							<td>State</td>
+							<td><%= f.text_field :state %></td>
+						</tr>
+					</table>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td>Homepage</td>
+			<td>
+				<%= f.text_field :homepage_url %>
+			</td>
+		</tr>
+		<tr>
+			<td>Birthdate</td>
+			<td><%=h @user_profile.birth_date.to_s %></td>
+		</tr>
+		<tr>
+			<td>Xbox 360 Gamertag</td>
+			<td><%= f.text_field :username_xbox360 %></td>
+		</tr>
+		<tr>
+			<td>Playstation Network ID</td>
+			<td><%= f.text_field :username_ps3 %></td>
+		</tr>
+		<tr>
+			<td><%= f.submit 'Update' %></td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+<% end -%>

@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-	has_many :signups, :as => :assembly
+	has_many :signups, :as => :signupable
 	belongs_to :event_type
 	
 	named_scope :upcoming_all, lambda { {:conditions => ['start_at > ?', Time.now]} }

@@ -1,0 +1,30 @@
+<h1>My Games</h1>
+
+<h2>Add new game</h2>
+
+<% form_for :user_game, :url => {:controller => :games, :action => :create} do |f| -%>
+	<table>
+		<tr>
+			<td>Game</td>
+			<td>
+				<%= f.collection_select :game_id, @games, :id, :name %>
+			</td>
+		</tr>
+		<tr>
+			<td>Platform</td>
+			<td>
+				<%= f.collection_select :platform_id, @platforms, :id, :name %>
+			</td>
+		</tr>
+		<tr>
+			<td>Rating</td>
+			<td>
+				<%= f.select :rating, [1,2,3,4,5], :include_blank => true %>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %> <%= link_to 'Cancel', :controller => :games %></td>
+		</tr>
+	</table>
+<% end -%>

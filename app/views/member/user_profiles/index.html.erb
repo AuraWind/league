@@ -1,0 +1,36 @@
+<h1>My Profile</h1>
+
+<table>
+	<tr>
+		<td>Name</td>
+		<td><%=h @user.name %></td>
+	</tr>
+	<tr>
+		<td>Location</td>
+		<td><%=h @user_profile.location %></td>
+	</tr>
+	<tr>
+		<td>Homepage</td>
+		<td>
+			<% if @user_profile.homepage_url.present? -%>
+				<%= link_to @user_profile.homepage_url, @user_profile.homepage_url %>
+			<% end -%>
+		</td>
+	</tr>
+	<tr>
+		<td>Birthdate</td>
+		<td><%=h @user_profile.birth_date.to_s %></td>
+	</tr>
+	<tr>
+		<td>Xbox 360 Gamertag</td>
+		<td><%=h @user_profile.username_xbox360 %></td>
+	</tr>
+	<tr>
+		<td>Playstation Network ID</td>
+		<td><%=h @user_profile.username_ps3 %></td>
+	</tr>
+	<tr>
+		<td><%= link_to 'Edit Profile', :controller => :user_profiles, :action => :edit, :id => @user_profile.id %></td>
+		<td>&nbsp;</td>
+	</tr>
+</table>

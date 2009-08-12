@@ -77,8 +77,8 @@ ActiveRecord::Schema.define(:version => 20090811055453) do
 
   create_table "signups", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "assembly_id"
-    t.string   "assembly_type"
+    t.integer  "signupable_id"
+    t.string   "signupable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

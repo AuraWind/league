@@ -16,6 +16,10 @@ class SessionsController < ApplicationController
       # button. Uncomment if you understand the tradeoffs.
       # reset_session
       self.current_user = user
+	  
+	  session["user_#{user.id}"] ||= {}
+	  session["user_#{user.id}"][:access_level] = user.role.access_level
+	  
       new_cookie_flag = (params[:remember_me] == "1")
       handle_remember_cookie! new_cookie_flag
       redirect_back_or_default('/')
