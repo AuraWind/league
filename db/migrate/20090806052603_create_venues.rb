@@ -9,7 +9,7 @@ class CreateVenues < ActiveRecord::Migration
       t.string :postal_code
       t.string :phone
       t.string :info
-      t.boolean :private, :default => true
+      t.boolean :public, :default => false
       t.timestamps
     end
   end

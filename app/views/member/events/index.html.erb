@@ -1,17 +1,46 @@
 <h1>My Events</h1>
 
+<h2>Sign-ups</h2>
+
 <% if @user_signups.present? -%>
 	<table>
 		<tr>
 			<th>Event Name</th>
 			<th>Event Type</th>
 			<th>Event Date</th>
-		</tr>	
+			<th>Attendees</th>
+		</tr>
 		<% @user_signups.each do |signup| -%>
 			<tr>
 				<td><%=h signup.signupable.name %></td>
 				<td><%=h signup.signupable.event_type.name %></td>
 				<td><%= event_date(signup.signupable) %></td>
+				<td><%=h signup.signupable.users.count %></td>
+			</tr>
+		<% end -%>
+	</table>
+<% else -%>
+	<em>You have not signed up for any upcoming events.</em>
+<% end -%>
+
+<h2>Created Events</h2>
+
+<p><%= link_to 'Create an Event', :controller => '/member/events', :action => :new %></p>
+
+<% if @user_events.present? -%>
+		<table>
+		<tr>
+			<th>Event Name</th>
+			<th>Event Type</th>
+			<th>Event Date</th>
+			<th>Attendees</th>
+		</tr>
+		<% @user_events.each do |event| -%>
+			<tr>
+				<td><%=h event.name %></td>
+				<td><%=h event.event_type.name %></td>
+				<td><%= event_date(event) %></td>
+				<td><%=h event.users.count %></td>
 			</tr>
 		<% end -%>
 <% else -%>

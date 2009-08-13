@@ -1,0 +1,23 @@
+<h1>Add a Main</h1>
+
+<% form_for :user_game_main, :url => {:controller => '/member/user_game_mains', :action => :create} do |f| -%>
+	<%= error_messages_for :user_game_main %>
+	
+	<table>
+		<tr>
+			<td>Game</td>
+			<td><%= f.collection_select :game_id, @games, :id, :name %></td>
+		</tr>
+		<tr>
+			<td>Main</td>
+			<td><%= f.text_field :main %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<%= f.submit %>
+				<%= link_to 'Cancel', :controller => '/member/user_game_mains' %>
+			</td>
+		</tr>
+	</table>
+<% end -%>

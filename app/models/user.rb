@@ -5,9 +5,12 @@ class User < ActiveRecord::Base
   include Authentication::ByPassword
   include Authentication::ByCookieToken
   
+  has_many :events
+  has_many :upcoming_events, :conditions => ['start_at > ?', Time.now], :class_name => 'Event'
   has_many :signups
   has_many :user_games
   has_many :games, :through => :user_games, :order => 'name ASC'
+  has_many :user_game_mains, :include => :game, :order => 'games.name ASC'
   
   has_one :user_profile
   has_one :user_role

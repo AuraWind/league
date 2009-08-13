@@ -1,0 +1,21 @@
+<h1>My Mains</h1>
+
+<p>
+	<%= link_to 'Add a Main', :controller => '/member/user_game_mains', :action => :new %>
+</p>
+
+<% if @user_game_mains.present? -%>
+	<table>
+		<tr>
+			<th>Game</th>
+			<th>Main</th>
+		</tr>
+		<% @user_game_mains.each do |ugm| -%>
+			<tr>
+				<td><%=h ugm.game.name %></td>
+				<td><%=h ugm.main %></td>
+			</tr>
+		<% end -%>
+<% else -%>
+	<em>You currently have no mains assigned to any games.</em>
+<% end -%>

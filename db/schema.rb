@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090811055453) do
+ActiveRecord::Schema.define(:version => 20090813045241) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20090811055453) do
     t.integer  "event_id"
     t.integer  "game_id"
     t.integer  "platform_id"
+    t.float    "fee",         :default => 0.0
     t.text     "info"
     t.datetime "start_at"
     t.datetime "end_at"
@@ -43,13 +44,15 @@ ActiveRecord::Schema.define(:version => 20090811055453) do
     t.string   "name"
     t.integer  "event_type_id"
     t.integer  "venue_id"
-    t.float    "fee"
+    t.float    "fee",           :default => 0.0
     t.text     "info"
     t.boolean  "is_official",   :default => false
     t.datetime "start_at"
     t.datetime "end_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.boolean  "charge_casual", :default => false
   end
 
   create_table "games", :force => true do |t|
@@ -79,6 +82,21 @@ ActiveRecord::Schema.define(:version => 20090811055453) do
     t.integer  "user_id"
     t.integer  "signupable_id"
     t.string   "signupable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "states", :force => true do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_game_mains", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "game_id"
+    t.string   "main"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -136,7 +154,7 @@ ActiveRecord::Schema.define(:version => 20090811055453) do
     t.string   "postal_code"
     t.string   "phone"
     t.string   "info"
-    t.boolean  "private",                  :default => true
+    t.boolean  "public",                   :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

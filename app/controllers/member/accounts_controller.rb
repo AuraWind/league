@@ -1,4 +1,5 @@
 class Member::AccountsController < Member::MemberController
+	layout 'my_account'
 	
 	def index
 		@user = current_user

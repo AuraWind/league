@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration
 	  t.string :name
 	  t.integer :event_type_id
 	  t.integer :venue_id
-	  t.float :fee
+	  t.float :fee, :default => 0
 	  t.text :info
 	  t.boolean :is_official, :default => false
 	  t.datetime :start_at

@@ -1,0 +1,103 @@
+<h1>New Event</h1>
+
+<% form_for :event, :url => {:controller => '/member/events', :action => :create} do |f| -%>
+	<%= error_messages_for :event %>
+	
+	<table>
+		<tr>
+			<td>Name</td>
+			<td><%= f.text_field :name %></td>
+		</tr>
+			<td>Event Type</td>
+			<td><%= f.collection_select :event_type_id, @event_types, :id, :name %></td>
+		<tr>
+		<tr>
+			<td>Fee</td>
+			<td><%= f.text_field :fee %></td>
+		</tr>
+		<tr>
+			<td>Charge for casuals</td>
+			<td><%= f.check_box :charge_casual, {}, true, false %> (DFG Style)</td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Starts At</td>
+			<td><%= f.datetime_select :start_at, :order => [:month, :day, :year] %></td>
+		</tr>
+		<tr>
+			<td>Ends At</td>
+			<td><%= f.datetime_select :end_at, :order => [:month, :day, :year], :include_blank => true %></td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<% if @venues.present? -%>
+			<tr>
+				<td><%= radio_button_tag :use_new_venue, false %>Use existing venue</td>
+				<td><%= f.collection_select :venue_id, @venues, :id, :name %></td>
+			</tr>
+		<% end -%>
+		<tr>
+			<td>
+				<% if @venues.present? -%>
+					<%= radio_button_tag :use_new_venue, true %> Use new venue
+				<% end -%>
+			</td>
+			<td>
+				<% fields_for @event.venue do |v| -%>
+					<fieldset>
+						<legend>Venue Information</legend>
+						<table>
+							<tr>
+								<td>Name</td>
+								<td><%= v.text_field :name %></td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td><%= v.text_field :address1 %></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><%= v.text_field :address2 %></td>
+							</tr>
+							<tr>
+								<td>City</td>
+								<td><%= v.text_field :city %></td>
+							</tr>
+							<tr>
+								<td>State</td>
+								<td><%= v.collection_select :state_id, @states, :id, :abbreviation, :include_blank => true %></td>
+							</tr>
+							<tr>
+								<td>Postal Code</td>
+								<td><%= v.text_field :postal_code %></td>
+							</tr>
+							<tr>
+								<td>Phone</td>
+								<td><%= v.text_field :phone %></td>
+							</tr>
+							<tr>
+								<td valign="top">Venue Information</td>
+								<td><%= v.text_area :info, :rows => 5 %></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><%= v.check_box :public, {}, true, false %> Save for later use</td>
+							</tr>
+						</table>
+					</fieldset>
+				<% end -%>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">Event Information</td>
+			<td><%= f.text_area :info, :rows => 5 %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %></td>
+		</tr>
+	</table>
+<% end -%>
