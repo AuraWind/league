@@ -9,11 +9,15 @@
 		<tr>
 			<th>Game</th>
 			<th>Main</th>
+			<th>Options</th>
 		</tr>
 		<% @user_game_mains.each do |ugm| -%>
 			<tr>
 				<td><%=h ugm.game.name %></td>
 				<td><%=h ugm.main %></td>
+				<td>
+					<%= link_to 'edit', :controller => '/member/user_game_mains', :action => :edit, :id => ugm.id %>
+					<%= link_to 'delete', {:controller => '/member/user_game_mains', :action => :destroy, :id => ugm.id}, :confirm => "Are you sure you want to delete #{ugm.main} as your main from #{ugm.game.name}?" %>
 			</tr>
 		<% end -%>
 <% else -%>

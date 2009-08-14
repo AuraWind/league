@@ -1,0 +1,92 @@
+<h1><%= @event.name %></h1>
+
+<p>
+	<%= link_to 'Sign Up!', :controller => '/member/signups', :action => :new, :event_id => @event.id %>
+</p>
+
+<table>
+	<tr>
+		<td>Created By</td>
+		<td><%=h @event.creator.name %></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2"><%=h @event.info %></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Event Type</td>
+		<td><%=h @event.event_type.name %></td>
+	</tr>
+	<tr>
+		<td>Official EFL Event?</td>
+		<td><%= @event.is_official ? 'Yes' : 'No' %></td>
+	</tr>
+	<tr>
+		<td>Starts At</td>
+		<td><%= @event.start_at.to_s :date_time12 %></td>
+	</tr>
+	<% if @event.end_at.present? -%>
+		<tr>
+			<td>Ends At</td>
+			<td><%= @event.end_at.to_s :date_time12 %></td>
+		</tr>
+	<% end -%>
+	<tr>
+		<td>Fee</td>
+		<td><%= money_format(@event.fee, '$', true) %></td>
+	</tr>
+	<% if @event.fee > 0 -%>
+		<tr>
+			<td>Casuals Free?</td>
+			<td><%= @event.charge_casual ? 'No' : 'Yes' %></td>
+		</tr>
+	<% end -%>
+	<tr>
+		<td colspan="2">
+			<fieldset>
+				<legend>Venue</legend>
+				<table>
+					<tr>
+						<td><%= @event.venue.name %></td>
+					</tr>
+					<tr>
+						<td><%= @event.venue.address1 %></td>
+					</tr>
+					<% if @event.venue.address2.present? -%>
+						<tr>
+							<td><%= @event.venue.address2 %></td>
+						</tr>
+					<% end -%>
+					<tr>
+						<td>
+							<%= @event.venue.city %>, 
+							<%= @event.venue.state.abbreviation %>
+							<%= @event.venue.postal_code %>
+						</td>
+					</tr>
+					<% if @event.venue.phone.present? -%>
+						<tr>
+							<td><%= @event.venue.phone %></td>
+						</tr>
+					<% end -%>
+					<% if @event.venue.info.present? -%>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>Additional Information:</td>
+						</tr>
+						<tr>
+							<td><%= @event.venue.info %></td>
+						</tr>
+					<% end -%>
+				</table>
+			</fieldset>
+		</td>
+	</tr>
+</table>

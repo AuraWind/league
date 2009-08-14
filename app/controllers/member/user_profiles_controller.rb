@@ -1,4 +1,6 @@
 class Member::UserProfilesController < Member::MemberController
+	before_filter :initialize_states, :only => [:edit, :update]
+
 	layout 'my_account'
 
 	def index
@@ -21,5 +23,8 @@ class Member::UserProfilesController < Member::MemberController
 			render :action => :edit
 		end
 	end
-
+	
+	############ private methods #############
+	private
+	
 end

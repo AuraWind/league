@@ -21,5 +21,9 @@ class ApplicationController < ActionController::Base
 	def access_required_admin
 		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= $ACCESS_LEVEL_ADMIN
 	end
+	
+	def initialize_states
+		@states = State.all
+	end
   
 end

@@ -40,13 +40,13 @@
 			</tr>
 		<% end -%>
 		<tr>
-			<td>
+			<td valign="top">
 				<% if @venues.present? -%>
 					<%= radio_button_tag :use_new_venue, true %> Use new venue
 				<% end -%>
 			</td>
 			<td>
-				<% fields_for @event.venue do |v| -%>
+				<% fields_for :venue do |v| -%>
 					<fieldset>
 						<legend>Venue Information</legend>
 						<table>
@@ -84,7 +84,11 @@
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
-								<td><%= v.check_box :public, {}, true, false %> Save for later use</td>
+								<td><%= v.check_box :public, {}, true, false %> Display to non-registered users</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><%= v.check_box :saved, {}, true, false %> Save for later use</td>
 							</tr>
 						</table>
 					</fieldset>

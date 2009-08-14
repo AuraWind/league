@@ -13,14 +13,15 @@ class Member::EventsController < Member::MemberController
 	end
 	
 	def create
+		@venue = params[:use_new_venue] == 'false' ? Venue.find(params[:venue_id]) : Venue.create(params[:venue])
+
 		@event = current_user.events.new(params[:event])
-		@event.venue = Venue.new(params[:venue])
+		@event.venue = @venue
 		
 		if @event.save
 			flash[:notice] = "Event was successfully created."
 			redirect_to :action => :index
 		else
-			logger.debug @event.to_yaml
 			render :action => :new
 		end
 	end
@@ -33,11 +34,7 @@ class Member::EventsController < Member::MemberController
 	end
 	
 	def initialize_venues
-		@venues = Venue.public
-	end
-	
-	def initialize_states
-		@states = State.all
+		@venues = Venue.saved
 	end
 	
 end

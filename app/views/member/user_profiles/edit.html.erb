@@ -13,7 +13,7 @@
 						</tr>
 						<tr>
 							<td>State</td>
-							<td><%= f.text_field :state %></td>
+							<td><%= f.collection_select :state_id, @states, :id, :abbreviation, :include_blank => true %></td>
 						</tr>
 					</table>
 				</fieldset>

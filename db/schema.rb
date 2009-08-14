@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.datetime "end_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
+    t.integer  "created_by"
     t.boolean  "charge_casual", :default => false
   end
 
@@ -119,7 +119,7 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "city"
-    t.string   "state"
+    t.integer  "state_id"
   end
 
   create_table "user_roles", :force => true do |t|
@@ -150,11 +150,12 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.string   "address1"
     t.string   "address2"
     t.string   "city"
-    t.string   "state",       :limit => 2
+    t.integer  "state_id"
     t.string   "postal_code"
     t.string   "phone"
     t.string   "info"
-    t.boolean  "public",                   :default => false
+    t.boolean  "public",      :default => false
+    t.boolean  "saved",       :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,7 +4,7 @@
 
 <% if @tournaments.present? -%>
 	<% @tournaments.each do |tournament| -%>
-		<p><%= tournament.name %></p>
+		<p><%= tournament.name %> <%= link_to 'Show Details', :controller => :events, :action => :show, :id => gathering.id %></p>
 	<% end -%>
 <% else -%>
 	<p><em>No upcoming tournaments.</em></p>
@@ -14,7 +14,7 @@
 
 <% if @gatherings.present? -%>
 	<% @gatherings.each do |gathering| -%>
-		<p><%= gathering.name %></p>
+		<p><%= gathering.name %> <%= link_to 'Show Details', :controller => :events, :action => :show, :id => gathering.id %></p>
 	<% end -%>
 <% else -%>
 	<p><em>No upcoming events.</em></p>

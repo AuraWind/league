@@ -1,0 +1,5 @@
+<div id="flash">
+	<% [:error, :warning, :notice, :message].each do |key, msg| -%>
+		<%= content_tag :div, flash()[key], :id => key if flash()[key] %>
+	<% end -%>
+</div>

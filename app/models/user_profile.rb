@@ -1,13 +1,14 @@
 class UserProfile < ActiveRecord::Base
 	belongs_to :user
+	belongs_to :state
 	
 	def location
 		if self.city.present? && self.state.present?
-			return self.city + ', ' + self.state
-		elsif self.city.present?
-			return self.city
+			return self.city + ', ' + self.state.name
+		elsif self.state.present?
+			return self.state.name
 		else
-			return self.state
+			return self.city
 		end
 	end
 	
