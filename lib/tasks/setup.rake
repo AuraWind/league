@@ -23,7 +23,7 @@ namespace :setup do
 		puts 'Creating admin user...'
 		user = User.new({
 			:login => 'admin',
-			:email => 'aurawind@gmail.com',
+			:email => 'john@doel.com',
 			:first_name => 'John',
 			:last_name => 'Doe',
 			:password => 'cats123',

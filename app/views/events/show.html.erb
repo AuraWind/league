@@ -1,7 +1,7 @@
 <h1><%= @event.name %></h1>
 
 <p>
-	<%= link_to 'Sign Up!', :controller => '/member/signups', :action => :new, :event_id => @event.id %>
+	<%= link_to 'Sign Up!', :controller => '/member/signups', :action => :create, :event_id => @event.id %>
 </p>
 
 <table>
@@ -50,42 +50,46 @@
 		<td colspan="2">
 			<fieldset>
 				<legend>Venue</legend>
-				<table>
-					<tr>
-						<td><%= @event.venue.name %></td>
-					</tr>
-					<tr>
-						<td><%= @event.venue.address1 %></td>
-					</tr>
-					<% if @event.venue.address2.present? -%>
+				<% if !@event.venue.public && current_user.nil? -%>
+					Login to see venue information
+				<% else -%>		
+					<table>
 						<tr>
-							<td><%= @event.venue.address2 %></td>
-						</tr>
-					<% end -%>
-					<tr>
-						<td>
-							<%= @event.venue.city %>, 
-							<%= @event.venue.state.abbreviation %>
-							<%= @event.venue.postal_code %>
-						</td>
-					</tr>
-					<% if @event.venue.phone.present? -%>
-						<tr>
-							<td><%= @event.venue.phone %></td>
-						</tr>
-					<% end -%>
-					<% if @event.venue.info.present? -%>
-						<tr>
-							<td>&nbsp;</td>
+							<td><%= @event.venue.name %></td>
 						</tr>
 						<tr>
-							<td>Additional Information:</td>
+							<td><%= @event.venue.address1 %></td>
 						</tr>
+						<% if @event.venue.address2.present? -%>
+							<tr>
+								<td><%= @event.venue.address2 %></td>
+							</tr>
+						<% end -%>
 						<tr>
-							<td><%= @event.venue.info %></td>
+							<td>
+								<%= @event.venue.city %>, 
+								<%= @event.venue.state.abbreviation %>
+								<%= @event.venue.postal_code %>
+							</td>
 						</tr>
-					<% end -%>
-				</table>
+						<% if @event.venue.phone.present? -%>
+							<tr>
+								<td><%= @event.venue.phone %></td>
+							</tr>
+						<% end -%>
+						<% if @event.venue.info.present? -%>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>Additional Information:</td>
+							</tr>
+							<tr>
+								<td><%= @event.venue.info %></td>
+							</tr>
+						<% end -%>
+					</table>
+				<% end -%>
 			</fieldset>
 		</td>
 	</tr>

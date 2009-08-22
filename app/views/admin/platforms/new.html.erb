@@ -1,0 +1,19 @@
+<h2>Add Platform</h2>
+
+<% form_for :platform, :url => {:controller => '/admin/platforms', :action => :create} do |f| -%>
+	<%= f.error_messages %>
+	<table>
+		<tr>
+			<td>Name*</td>
+			<td><%= f.text_field :name %></td>
+		</tr>
+		<tr>
+			<td>Abbreviation*</td>
+			<td><%= f.text_field :abbreviation %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %>
+		</tr>
+	</table>
+<% end -%>

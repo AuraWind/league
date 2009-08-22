@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.integer  "event_id"
     t.integer  "game_id"
     t.integer  "platform_id"
-    t.float    "fee",         :default => 0.0
+    t.integer  "fee",         :limit => 10, :precision => 10, :scale => 0, :default => 0
     t.text     "info"
     t.datetime "start_at"
     t.datetime "end_at"
@@ -44,15 +44,15 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.string   "name"
     t.integer  "event_type_id"
     t.integer  "venue_id"
-    t.float    "fee",           :default => 0.0
+    t.integer  "fee",           :limit => 10, :precision => 10, :scale => 0, :default => 0
     t.text     "info"
-    t.boolean  "is_official",   :default => false
+    t.boolean  "is_official",                                                :default => false
     t.datetime "start_at"
     t.datetime "end_at"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "created_by"
-    t.boolean  "charge_casual", :default => false
+    t.boolean  "charge_casual",                                              :default => false
   end
 
   create_table "games", :force => true do |t|

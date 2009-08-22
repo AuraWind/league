@@ -1,0 +1,27 @@
+<h2>Add Game</h2>
+
+<% form_for :game, :url => {:controller => '/admin/games', :action => :create} do |f| -%>
+	<%= f.error_messages %>
+	<table>
+		<tr>
+			<td>Name*</td>
+			<td><%= f.text_field :name %></td>
+		</tr>
+		<tr>
+			<td>Abbreviation*</td>
+			<td><%= f.text_field :abbreviation %></td>
+		</tr>
+		<tr>
+			<td>Publisher</td>
+			<td><%= f.text_field :publisher %></td>
+		</tr>
+		<tr>
+			<td>Developer</td>
+			<td><%= f.text_field :developer %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %>
+		</tr>
+	</table>
+<% end -%>

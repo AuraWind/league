@@ -1,0 +1,7 @@
+<p>
+	Welcome <%= current_user.name %>!
+	
+	<%= link_to 'Home', :controller => '/admin' %>
+	<%= link_to 'Public Area', :controller => '/main' %>
+	<%= link_to "Log out", logout_path, { :title => "Log out" }   %>
+</p>

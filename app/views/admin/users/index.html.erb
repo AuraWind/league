@@ -1,0 +1,28 @@
+<h2>Manage Users</h2>
+
+<p>
+	<%= link_to 'Create New User', :controller => '/admin/users', :action => :new %>
+</p>
+
+<table>
+	<tr>
+		<th>Login</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Role</th>
+		<th>Options</th>
+	</tr>
+	<% @users.each do |user| -%>
+		<tr>
+			<td><%=h user.login %></td>
+			<td><%=h user.name %></td>
+			<td><%=h user.email %></td>
+			<td><%= user.role.name %></td>
+			<td>
+				<%= link_to 'Edit', :controller => '/admin/users', :action => :edit, :id => user.id %>
+				<%= link_to 'Change Password', :controller => '/admin/users', :action => :change_password, :id => user.id %>
+			</td>
+		</tr
+	<% end -%>
+</table>
+	

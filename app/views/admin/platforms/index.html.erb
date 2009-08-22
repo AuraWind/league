@@ -1,0 +1,20 @@
+<h2>Manage Platforms</h2>
+
+<p>
+	<%= link_to 'Add New Platform', :controller => '/admin/platforms', :action => :new %>
+</p>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Abbreviation</th>
+		<th>Options</th>
+	</tr>
+	<% @platforms.each do |platform| -%>
+		<tr>
+			<td><%=h platform.name %></td>
+			<td><%=h platform.abbreviation %></td>
+			<td><%= link_to 'Edit', :controller => '/admin/platforms', :action => :edit,  :id => platform.id %></td>
+		</tr>
+	<% end -%>
+</table>

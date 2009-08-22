@@ -1,0 +1,24 @@
+<h2>Manage Games</h2>
+
+<p>
+	<%= link_to 'Add New Game', :controller => '/admin/games', :action => :new %>
+</p>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Abbreviation</th>
+		<th>Publisher</th>
+		<th>Developer</th>
+		<th>Options</th>
+	</tr>
+	<% @games.each do |game| -%>
+		<tr>
+			<td><%=h game.name %></td>
+			<td><%=h game.abbreviation %></td>
+			<td><%=h game.publisher %></td>
+			<td><%=h game.developer %></td>
+			<td><%= link_to 'Edit', :controller => '/admin/games', :action => :edit,  :id => game.id %></td>
+		</tr>
+	<% end -%>
+</table>

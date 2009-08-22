@@ -1,0 +1,33 @@
+<h2>Edit a User</h2>
+
+<% form_for :user, :url => {:controller => '/admin/users', :action => :update, :id => @user.id} do |f| -%>
+	<%= f.error_messages %>
+	<table>
+		<% fields_for :user_role do |ur| -%>
+			<tr>
+				<td>Role</td>
+				<td><%= ur.collection_select :role_id, @roles, :id, :name %></td>
+			</tr>
+		<% end -%>
+		<tr>
+			<td>Login</td>
+			<td><%= f.text_field :login %></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><%= f.text_field :email %></td>
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td><%= f.text_field :first_name %></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><%= f.text_field :last_name %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %></td>
+		</tr>
+	</table>
+<% end -%>
