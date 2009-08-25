@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090813045241) do
+ActiveRecord::Schema.define(:version => 20090825030418) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -66,7 +66,11 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
 
   create_table "platforms", :force => true do |t|
     t.string   "name"
-    t.string   "abbreviation", :limit => 20
+    t.string   "abbreviation",              :limit => 20
+    t.boolean  "is_networked"
+    t.string   "network_name"
+    t.string   "network_name_abbreviation"
+    t.string   "network_username_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

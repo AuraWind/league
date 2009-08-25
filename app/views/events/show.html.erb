@@ -1,7 +1,11 @@
 <h1><%= @event.name %></h1>
 
 <p>
-	<%= link_to 'Sign Up!', :controller => '/member/signups', :action => :create, :event_id => @event.id %>
+	<% if current_user && current_user.signed_up?(@event) -%>
+		<em>You are signed up for this event!</em>
+	<% else -%>
+		<%= link_to 'Sign Up!', :controller => '/member/events', :action => :signup, :id => @event.id %>
+	<% end -%>
 </p>
 
 <table>
@@ -94,3 +98,41 @@
 		</td>
 	</tr>
 </table>
+
+<% if @event.event_games.present? -%>
+	<fieldset>
+		<legend>Event Games</legend>
+		<table>
+			<tr>
+				<th>Game</th>
+				<th>Platform</th>
+				<th>Fee</th>
+				<th>Starts At</th>
+				<th>Ends At</th>
+				<th>Information</th>
+				<% if current_user && current_user.signed_up?(@event) -%>
+					<th>Status</th>
+				<% end -%>
+			</tr>
+			<% @event.event_games.each do |event_game| -%>
+				<tr>
+					<td><%=h event_game.game.name %></td>
+					<td><%=h event_game.platform.name %></td>
+					<td><%=h money_format(event_game.fee, '$', true) %></td>
+					<td><%= event_game.start_at.to_s :date_time12 if event_game.start_at.present? %></td>
+					<td><%= event_game.end_at.to_s :date_time12 if event_game.end_at.present? %></td>
+					<td><%=h event_game.info %></td>
+					<% if current_user && current_user.signed_up?(@event) -%>
+						<td>
+							<% if current_user.signed_up?(event_game) -%>
+								Enrolled
+							<% else -%>
+								<%= link_to 'Sign Up for this Game', :controller => '/member/event_games', :action => :signup, :id => event_game.id %></td>
+							<% end -%>
+						</td>
+					<% end -%>
+				</tr>
+			<% end -%>
+		</table>
+	</fieldset>
+<% end -%>

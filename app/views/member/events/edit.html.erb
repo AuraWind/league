@@ -1,6 +1,6 @@
-<h1>New Event</h1>
+<h1>Edit Event</h1>
 
-<% form_for :event, :url => {:controller => '/member/events', :action => :create} do |f| -%>
+<% form_for :event, :url => {:controller => '/member/events', :action => :update, :id => @event.id} do |f| -%>
 	<%= error_messages_for :event %>
 	
 	<table>
@@ -36,7 +36,7 @@
 		</tr>
 		<% if @venues.present? -%>
 			<tr>
-				<td><%= radio_button_tag :use_new_venue, false %>Use existing venue</td>
+				<td><%= radio_button_tag :use_new_venue, false, true %>Use existing venue</td>
 				<td><%= f.collection_select :venue_id, @venues, :id, :name, :include_blank => true %></td>
 			</tr>
 		<% end -%>

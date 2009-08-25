@@ -1,5 +1,6 @@
 class Member::UserProfilesController < Member::MemberController
 	before_filter :initialize_states, :only => [:edit, :update]
+	before_filter :initialize_networked_platforms
 
 	layout 'my_account'
 
@@ -9,7 +10,7 @@ class Member::UserProfilesController < Member::MemberController
 	end
 	
 	def edit
-		@user_profile = current_user.user_profile		
+		@user_profile = current_user.user_profile
 	end
 	
 	def update
@@ -26,5 +27,9 @@ class Member::UserProfilesController < Member::MemberController
 	
 	############ private methods #############
 	private
+	
+	def initialize_networked_platforms
+		@networked_platforms = Platform.networked
+	end
 	
 end

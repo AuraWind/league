@@ -14,10 +14,10 @@
 		</tr>
 		<% @user_signups.each do |signup| -%>
 			<tr>
-				<td><%=h signup.signupable.name %></td>
+				<td><%= link_to h(signup.signupable.name), :controller => '/events', :action => :show, :id => signup.signupable.id %></td>
 				<td><%=h signup.signupable.event_type.name %></td>
 				<td><%= event_date(signup.signupable) %></td>
-				<td><%=h signup.signupable.users.count %></td>
+				<td><%= link_to h(signup.signupable.users.count), :controller => '/member/events', :action => :attendance, :id => signup.signupable.id %></td>
 			</tr>
 		<% end -%>
 	</table>
@@ -36,13 +36,18 @@
 			<th>Event Type</th>
 			<th>Event Date</th>
 			<th>Attendees</th>
+			<th>Options</th>
 		</tr>
 		<% @user_events.each do |event| -%>
 			<tr>
-				<td><%=h event.name %></td>
+				<td><%=link_to h(event.name), :controller => '/events', :action => :show, :id => event.id %></td>
 				<td><%=h event.event_type.name %></td>
 				<td><%= event_date(event) %></td>
-				<td><%=h event.users.count %></td>
+				<td><%= link_to h(event.users.count), :controller => '/member/events', :action => :attendance, :id => event.id %></td>
+				<td>
+					<%= link_to 'Edit', :controller => '/member/events', :action => :edit, :id => event.id %>
+					<%= link_to 'Event Games', :controller => '/member/event_games', :event_id => event.id %>
+				</td>
 			</tr>
 		<% end -%>
 <% else -%>

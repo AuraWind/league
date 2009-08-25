@@ -1,0 +1,35 @@
+<h1>Edit Game in <%=h @event.name %></h1>
+
+<% form_for :event_game, :url => {:controller => '/member/event_games', :action => :update, :id => @event_game.id} do |f| -%>
+	<%= error_messages_for :event_game %>
+	<table>
+		<tr>
+			<td>Game</td>
+			<td><%= f.collection_select :game_id, @games, :id, :name, :include_blank => true %></td>
+		</tr>
+		<tr>
+			<td>Platform</td>
+			<td><%= f.collection_select :platform_id, @platforms, :id, :name, :include_blank => true %></td>
+		<tr>
+		<tr>
+			<td>Fee</td>
+			<td><%= f.text_field :fee %></td>
+		</tr>
+		<tr>
+			<td>Starts At</td>
+			<td><%= f.datetime_select :start_at, :order => [:month, :day, :year], :include_blank => true %></td>
+		</tr>
+		<tr>
+			<td>Ends At</td>
+			<td><%= f.datetime_select :end_at, :order => [:month, :day, :year], :include_blank => true %></td>
+		</tr>
+		<tr>
+			<td valign="top">Event Game Information</td>
+			<td><%= f.text_area :info, :rows => 5 %></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><%= f.submit %></td>
+		</tr>
+	</table>
+<% end -%>

@@ -23,7 +23,7 @@ namespace :setup do
 		puts 'Creating admin user...'
 		user = User.new({
 			:login => 'admin',
-			:email => 'john@doel.com',
+			:email => 'john@doe.com',
 			:first_name => 'John',
 			:last_name => 'Doe',
 			:password => 'cats123',
@@ -89,8 +89,8 @@ namespace :setup do
 		puts 'Creating platforms'
 		Platform.create({:name => 'All Platforms', :abbreviation => 'All'})
 		Platform.create({:name => 'Playstation 2', :abbreviation => 'PS2'})
-		Platform.create({:name => 'Playstation 3', :abbreviation => 'PS3'})
-		Platform.create({:name => 'Xbox 360', :abbreviation => '360'})
+		Platform.create({:name => 'Playstation 3', :abbreviation => 'PS3', :is_networked => true, :network_name => 'Playstation Network', :network_name_abbreviation => 'PSN', :network_username_name => 'ID'})
+		Platform.create({:name => 'Xbox 360', :abbreviation => '360', :is_networked => true, :network_name => 'Xbox Live!', :network_name_abbreviation => 'XBL', :network_username_name => 'Gamertag'})
 		Platform.create({:name => 'Wii', :abbreviation => 'Wii'})
 	end
 	

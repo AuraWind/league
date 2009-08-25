@@ -1,0 +1,18 @@
+<h1>Member Mains</h1>
+
+<table>
+	<tr>
+		<th>&nbsp;</th>
+		<% @games.each do |game| -%>
+			<th><%=h game.name %></th>
+		<% end -%>
+	</tr>
+	<% @users.each do |user| -%>
+		<tr>
+			<td><%=h user.login %></td>
+			<% @games.each do |game| -%>
+				<td><%=h user.main(game) %></td>
+			<% end -%>
+		</tr>
+	<% end -%>
+</table>

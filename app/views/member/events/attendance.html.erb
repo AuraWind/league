@@ -1,0 +1,22 @@
+<h1>Attendance for <%=h @event.name %></h1>
+
+<table border="1">
+	<% if @event.event_games.present? -%>
+		<tr>
+			<th>&nbsp;</th>
+			<% @event.event_games.each do |event_game| -%>
+				<th><%=h event_game.game.name %> (<%=h event_game.platform.name %>)</th>
+			<% end -%>
+		</tr>
+	<% end -%>
+	<% @event.users.each do |user| -%>
+		<tr>
+			<td><%=h user.login %></td>
+			<% if @event.event_games.present? -%>
+				<% @event.event_games.each do |event_game| -%>
+					<td align="center"><%= user.signed_up?(event_game) ? 'X' : '&nbsp;' %></td>
+				<% end -%>
+			<% end -%>
+		</tr>
+	<% end -%>
+</table>

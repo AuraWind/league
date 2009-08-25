@@ -47,9 +47,19 @@ class Admin::UsersController < Admin::AdminController
 	end
 	
 	def edit_password
+		@user = User.find(params[:id])
 	end
 	
 	def update_password
+		@user = User.find(params[:id])
+		@user.attributes = params[:user]
+		
+		if @user.save
+			flash[:notice] = "#{@user.login}'s password has been changed."
+			redirect_to :action => :index
+		else
+			render :action => :edit_password
+		end
 	end
 	
 	

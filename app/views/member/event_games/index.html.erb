@@ -1,0 +1,34 @@
+<h1>Games scheduled for <%=h @event.name %></h1>
+
+<p>
+	<%= link_to 'Add New Event Game', :controller => '/member/event_games', :action => :new, :event_id => @event.id %>
+</p>
+
+<% if @event.event_games.present? -%>
+	<table>
+		<tr>
+			<th>Game</th>
+			<th>Platform</th>
+			<th>Fee</th>
+			<th>Starts At</th>
+			<th>Ends At</th>
+			<th>Information</th>
+			<th>Options</th>
+		</tr>
+		<% @event.event_games.each do |event_game| -%>
+			<tr>
+				<td><%=h event_game.game.name %></td>
+				<td><%=h event_game.platform.name %></td>
+				<td><%=h money_format(event_game.fee, '$', true) %></td>
+				<td><%= event_game.start_at.to_s :date_time12 if event_game.start_at.present? %></td>
+				<td><%= event_game.end_at.to_s :date_time12 if event_game.end_at.present? %></td>
+				<td><%=h event_game.info %></td>
+				<td><%= link_to 'Edit', :controller => '/member/event_games', :action => :edit, :id => event_game.id %></td>
+			</tr>
+		<% end -%>
+	</table>
+<% else -%>
+	<p>
+		<em>No games are currently scheduled for this event.</em>
+	</p>
+<% end -%>

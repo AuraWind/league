@@ -49,12 +49,4 @@ class Member::GamesController < Member::MemberController
 	################# private methods #################
 	private
 	
-	def initialize_games
-		@games = Game.all(:order => 'name ASC')
-	end
-	
-	def initialize_platforms
-		@platforms = Platform.all_specific
-	end
-	
 end

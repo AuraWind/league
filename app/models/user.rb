@@ -33,6 +33,9 @@ class User < ActiveRecord::Base
   validates_length_of       :email,    :within => 6..100 #r@a.wk
   validates_uniqueness_of   :email
   validates_format_of       :email,    :with => Authentication.email_regex, :message => Authentication.bad_email_message
+  
+  named_scope :on_xbox360, :include => :user_profile, :conditions => ["user_profiles.username_xbox360 <> ''"], :order => 'login ASC'
+  named_scope :on_ps3, :include => :user_profile, :conditions => ["user_profiles.username_ps3 <> ''"], :order => 'login ASC'
     
   attr_accessible :login, :email, :first_name, :last_name, :password, :password_confirmation
 
@@ -66,6 +69,15 @@ class User < ActiveRecord::Base
 		:joins => 'INNER JOIN events ON signups.signupable_id = events.id',
 		:conditions => ['start_at > ? AND signups.signupable_type = ?', Time.now, 'Event'],
 		:order => 'start_at ASC')
+  end
+  
+  def main(game)
+	user_game_main = self.user_game_mains.find(:first, :conditions => ['game_id = ?', game.id])
+	user_game_main.blank? ? '' : user_game_main.main
+  end
+  
+  def signed_up?(event)
+	self.signups.find(:first, :conditions => ['signupable_id = ? AND signupable_type = ?', event.id, event.class.name])
   end
 
   ################ private methods ###############

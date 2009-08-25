@@ -46,8 +46,4 @@ class Member::UserGameMainsController < Member::MemberController
 	################# private methods ################
 	private
 	
-	def initialize_games
-		@games = Game.all(:order => 'name ASC')
-	end
-	
 end

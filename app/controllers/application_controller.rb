@@ -25,5 +25,13 @@ class ApplicationController < ActionController::Base
 	def initialize_states
 		@states = State.all
 	end
+	
+	def initialize_games
+		@games = Game.all(:order => 'name ASC')
+	end
+	
+	def initialize_platforms
+		@platforms = Platform.all_specific
+	end
   
 end

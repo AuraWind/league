@@ -1,6 +1,7 @@
 class Event < ActiveRecord::Base
 	has_many :signups, :as => :signupable
 	has_many :users, :through => :signups
+	has_many :event_games
 	
 	belongs_to :creator, :foreign_key => :created_by, :class_name => 'User'
 	belongs_to :event_type

@@ -1,0 +1,9 @@
+<%= render :partial => 'layouts/shared/header' %>
+<body>
+	<%= render :partial => 'layouts/shared/session' %>
+	<%= render :partial => 'layouts/shared/nav/member_list' %>
+	<%= render :partial => 'layouts/shared/flash' %>
+	
+	<%= yield %>
+</body>
+<%= render :partial => 'layouts/shared/footer' %>

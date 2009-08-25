@@ -1,0 +1,26 @@
+<h1>All Members</h1>
+
+<table>
+	<tr>
+		<th>Username</th>
+		<th>Name</th>
+		<th>City</th>
+		<th>State</th>
+		<th>XBL Gamertag</th>
+		<th>PSN ID</th>
+	</tr>
+	<% @users.each do |user| -%>
+		<tr>
+			<td><%=h user.login %></td>
+			<td><%=h user.name %></td>
+			<td><%=h user.user_profile.city %></td>
+			<td>
+				<% if user.user_profile.state.present? -%>
+					<%=h user.user_profile.state.name %>
+				<% end -%>
+			</td>
+			<td><%=h user.user_profile.username_xbox360 %></td>
+			<td><%=h user.user_profile.username_ps3 %></td>
+		</tr>
+	<% end -%>
+</table>
