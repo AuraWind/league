@@ -1,8 +1,10 @@
 <%= render :partial => 'layouts/shared/header' %>
 <body>
 	<%= render :partial => 'layouts/shared/session' %>
-	<%= render :partial => 'layouts/shared/flash' %>
+	<div id="content-main">
+		<%= render :partial => 'layouts/shared/flash' %>
 	
-	<%= yield %>
+		<%= yield %>
+	</div>
 </body>
 <%= render :partial => 'layouts/shared/footer' %>
