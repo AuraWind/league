@@ -1,0 +1,3 @@
+*.log  # Will exclude all .log files
+/log/* # Try ignoring the whole log dir
+/tmp/* # The same goes for the temp directory
