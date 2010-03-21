@@ -11,15 +11,16 @@ class ApplicationController < ActionController::Base
 	# filter_parameter_logging :password
   
 	def access_required_member
-		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= $ACCESS_LEVEL_MEMBER
+	logger.debug session.to_yaml
+		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= Role.access_level('Member')
 	end
 	
 	def access_required_organizer
-		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= $ACCESS_LEVEL_ORGANIZER
+		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= Role.access_level('Organizer')
 	end
 	
 	def access_required_admin
-		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= $ACCESS_LEVEL_ADMIN
+		redirect_to '/access_denied.html' and return unless session["user_#{current_user.id}"][:access_level] >= Role.access_level('Administrator')
 	end
 	
 	def initialize_states

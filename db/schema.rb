@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090813045241) do
+ActiveRecord::Schema.define(:version => 20100321172103) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.integer  "access_level"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_default",   :default => false
   end
 
   create_table "signups", :force => true do |t|
@@ -126,14 +127,8 @@ ActiveRecord::Schema.define(:version => 20090813045241) do
     t.integer  "state_id"
   end
 
-  create_table "user_roles", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "role_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", :force => true do |t|
+    t.integer  "role_id"
     t.string   "login",                     :limit => 40
     t.string   "first_name",                :limit => 50
     t.string   "last_name",                 :limit => 50

@@ -1,10 +1,13 @@
 #  Create roles
-Role.create({:name => 'Member', :access_level => 1})
+Role.create({:name => 'Member', :access_level => 1, :is_default => true})
 Role.create({:name => 'Organizer', :access_level => 2})
 Role.create({:name => 'Administrator', :access_level =>3})
 
+admin_role = Role.find_by_name('Administrator')
+
 # Create admin user
 user = User.new({
+	:role_id => admin_role.id,
 	:login => 'admin',
 	:email => 'john@doe.com',
 	:first_name => 'John',
@@ -13,8 +16,6 @@ user = User.new({
 	:password_confirmation => 'cats123'})
 user.save!
 user.reload
-	
-UserRole.create({:user_id =>user.id, :role_id => $ACCESS_LEVEL_ADMIN})
 
 # Create event types
 EventType.create({:name => 'Gathering', :is_competitive => false})
@@ -54,6 +55,12 @@ Game.create({
 Game.create({
 	:name => 'Street Fighter IV',
 	:abbreviation => 'SF4',
+	:developer => 'Capcom',
+	:publisher => 'Capcom'})
+	
+Game.create({
+	:name => 'Super Street Fighter IV',
+	:abbreviation => 'SSF4',
 	:developer => 'Capcom',
 	:publisher => 'Capcom'})
 	

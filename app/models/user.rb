@@ -14,8 +14,10 @@ class User < ActiveRecord::Base
   
   has_one :user_profile
   has_one :user_role
-  has_one :role, :through => :user_role
   
+  belongs_to :role
+  
+  before_create :set_role
   after_create :create_user_profile
   
   validates_presence_of     :login
@@ -47,12 +49,12 @@ class User < ActiveRecord::Base
   #
   def self.authenticate(login, password)
     return nil if login.blank? || password.blank?
-    u = find_by_login(login.downcase) # need to get the salt
+    u = find :first, :conditions => ['LOWER(login) = ?', login.downcase]
     u && u.authenticated?(password) ? u : nil
   end
 
   def login=(value)
-    write_attribute :login, (value ? value.downcase : nil)
+    write_attribute :login, (value ? value : nil)
   end
 
   def email=(value)
@@ -85,6 +87,11 @@ class User < ActiveRecord::Base
   
   def create_user_profile
 	UserProfile.create({:user_id => self.id})
+  end
+  
+  def set_role
+	return if self.role_id.present?
+	self.role_id = Role.default.id
   end
   
   

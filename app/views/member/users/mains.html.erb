@@ -1,17 +1,17 @@
 <h1>Member Mains</h1>
 
-<table>
+<table cellspacing="4px" cellpadding="4px" border="1">
 	<tr>
 		<th>&nbsp;</th>
 		<% @games.each do |game| -%>
-			<th><%=h game.name %></th>
+			<th class="<%=h game.abbreviation.downcase %>"><%=h game.name %></th>
 		<% end -%>
 	</tr>
 	<% @users.each do |user| -%>
 		<tr>
 			<td><%=h user.login %></td>
 			<% @games.each do |game| -%>
-				<td><%=h user.main(game) %></td>
+				<td class="<%=h game.abbreviation.downcase %>"><%=h user.main(game) %>&nbsp;</td>
 			<% end -%>
 		</tr>
 	<% end -%>

@@ -5,7 +5,7 @@
 <h2>Sign-ups</h2>
 
 <% if @user_signups.present? -%>
-	<table>
+	<table border="1" cellspacing="4px" cellpadding="4px" border="1">
 		<tr>
 			<th>Event Name</th>
 			<th>Event Type</th>
@@ -30,26 +30,27 @@
 <p><%= link_to 'Create an Event', :controller => '/member/events', :action => :new %></p>
 
 <% if @user_events.present? -%>
-		<table>
-		<tr>
-			<th>Event Name</th>
-			<th>Event Type</th>
-			<th>Event Date</th>
-			<th>Attendees</th>
-			<th>Options</th>
-		</tr>
-		<% @user_events.each do |event| -%>
+		<table border="1" cellspacing="4px" cellpadding="4px" border="1">
 			<tr>
-				<td><%=link_to h(event.name), :controller => '/events', :action => :show, :id => event.id %></td>
-				<td><%=h event.event_type.name %></td>
-				<td><%= event_date(event) %></td>
-				<td><%= link_to h(event.users.count), :controller => '/member/events', :action => :attendance, :id => event.id %></td>
-				<td>
-					<%= link_to 'Edit', :controller => '/member/events', :action => :edit, :id => event.id %>
-					<%= link_to 'Event Games', :controller => '/member/event_games', :event_id => event.id %>
-				</td>
+				<th>Event Name</th>
+				<th>Event Type</th>
+				<th>Event Date</th>
+				<th>Attendees</th>
+				<th>Options</th>
 			</tr>
-		<% end -%>
+			<% @user_events.each do |event| -%>
+				<tr>
+					<td><%=link_to h(event.name), :controller => '/events', :action => :show, :id => event.id %></td>
+					<td><%=h event.event_type.name %></td>
+					<td><%= event_date(event) %></td>
+					<td><%= link_to h(event.users.count), :controller => '/member/events', :action => :attendance, :id => event.id %></td>
+					<td>
+						<%= link_to 'Edit', :controller => '/member/events', :action => :edit, :id => event.id %>
+						<%= link_to 'Event Games', :controller => '/member/event_games', :event_id => event.id %>
+					</td>
+				</tr>
+			<% end -%>
+		</table>
 <% else -%>
 	<em>You have no upcoming events.</em>
 <% end -%>

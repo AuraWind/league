@@ -1,6 +1,6 @@
 <h1>Xbox Live! Members</h1>
 
-<table>
+<table cellspacing="4px" cellpadding="4px" border="1">
 	<tr>
 		<th>Username</th>
 		<th>Name</th>
@@ -12,11 +12,11 @@
 		<tr>
 			<td><%=h user.login %></td>
 			<td><%=h user.name %></td>
-			<td><%=h user.user_profile.city %></td>
+			<td><%=h user.user_profile.city %>&nbsp;</td>
 			<td>
 				<% if user.user_profile.state.present? -%>
 					<%=h user.user_profile.state.name %>
-				<% end -%>
+				<% end -%>&nbsp;
 			</td>
 			<td><%=h user.user_profile.username_xbox360 %></td>
 		</tr>
